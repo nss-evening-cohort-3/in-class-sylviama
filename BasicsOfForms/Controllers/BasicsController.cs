@@ -14,10 +14,10 @@ namespace BasicsOfForms.Controllers
             return View();
         }
 
-        //public ActionResult Angular()
-        //{
-        //    return View();
-        //}
+        public ActionResult Angular()
+        {
+            return View();
+        }
 
         public ActionResult Razor()
         {
@@ -26,21 +26,24 @@ namespace BasicsOfForms.Controllers
 
 
 
-        //[HttpPost]
-        //public ActionResult Angular(FormCollection form)
-        //{
-        //    return View();
-        //}
+        [HttpPost]
+        public ActionResult Angular(FormCollection form)
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Razor(FormCollection form)
         {
+            string email = form[1];
             return View();
         }
 
         [HttpPost]
         public ActionResult Index(FormCollection form)
         {
+            string email = form[1];
+
             return View();
         }
     }

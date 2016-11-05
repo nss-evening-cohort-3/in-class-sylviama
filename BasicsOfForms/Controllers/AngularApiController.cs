@@ -13,7 +13,7 @@ namespace BasicsOfForms.Controllers
         // POST api/<controller>
         public void Post([FromBody]dynamic form)
         {
-            
+            string email = form[1];
         }
  
         
